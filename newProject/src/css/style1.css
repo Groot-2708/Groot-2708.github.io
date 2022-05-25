@@ -1,0 +1,390 @@
+/*.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #e0e0e0;
+  z-index: 1001;
+  transition: all 0.4s;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+  transition: all 0.4s;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+  transition: all 0.4s;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+    
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+    transition: all 0.4s;
+}
+
+.loaded .preloader {
+  display: none;
+    transition: all 0.4s;
+}*/
+.aboutme input{
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.aboutme input:hover::before{
+    transform: scaleX(1.1);
+}
+.aboutme input:hover{
+    font-size: 17px;
+    color: #344051;
+    background-color: azure;
+    border-color: #344051;
+}
+
+.aboutme input:active{
+    transform: scale(1.1);
+    color: black;
+}
+
+.imgaboutme{
+    transition: all 0.1s;
+    transform: scale(1);
+    border-radius: 50%;
+}
+
+.imgaboutme:hover{
+    transform: scale(1.5);
+    border: 2px solid gray;
+        
+}
+
+.Web{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.Web:hover{
+    transform: scale(1.2);
+}
+
+.development{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.development:hover{
+    transform: scale(1.2);
+}
+
+.CEO{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.CEO:hover{
+    transform: scale(1.2);
+}
+
+.market{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.market:hover{
+    transform: scale(1.2);
+}
+
+.website a{
+    text-decoration: none;
+}
+
+.website a:active{
+    color: blue;
+}
+
+.cases input{
+    transform: scale(1);
+}
+
+.cases input:hover{
+    transform: scale(1.2);
+}
+
+.cases input:active{
+    border: 2px solid red;
+}
+
+.costmain input{
+    transform: scale(1);
+}
+
+.costmain input:hover{
+    transform: scale(1.2);
+}
+
+.costmain input:active{
+    border: 2px solid red;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    display: inline-block;
+}
+i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid #cfd2d7;
+    border-radius: 6px;
+    background: #cfd2d7;
+    position: relative;
+}
+
+input[type="radio"]+i{
+    border-radius: 50%;
+}
+i:before{
+    content: '';
+    position: absolute;
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+    background: #c96500;
+    border-radius: 6px;
+    transform: scale(0);
+    transition: .4s;
+}
+
+input[type="radio"]+i:before{
+    border-radius: 6px;
+}
+
+input:checked+i:before{
+    transform: scale(1);
+}
+
+select:focus {
+  outline: 0.15em solid #00f;
+  box-shadow: 0 0 0.2em #00f;
+}
+
+.smile{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.smile:hover{
+    transform: scale(1.2);
+}
+
+.clock{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.clock:hover{
+    transform: scale(1.2);
+}
+
+.project{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.project:hover{
+    transform: scale(1.2);
+}
+
+.reward{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.reward:hover{
+    transform: scale(1.2);
+}
+
+.imgrewiews{
+    transition: all 0.1s;
+    transform: scale(1);
+    border-radius: 50%;
+}
+
+.imgrewiews:hover{
+    transform: scale(1.5);
+    border: 2px solid gray;
+        
+}
+
+.geo{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.geo:hover{
+    transform: scale(1.2);
+}
+
+.geo:hover::after{
+    content: "Геолокация";
+    font-size: 8px;
+    color: black;
+    background-color: white;
+    margin-left: 129px;
+    
+}
+.mail{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.mail:hover{
+    transform: scale(1.2);
+}
+
+.mail:hover::after{
+    content: "Почта";
+    font-size: 8px;
+    color: black;
+    background-color: white;
+    margin-left: 155px;
+    
+}
+.number{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.number:hover{
+    transform: scale(1.2);
+}
+
+.number:hover::after{
+    content: "Телефон";
+    font-size: 8px;
+    color: black;
+    background-color: white;
+    margin-left: 103px;
+    
+}
+
+.namemessage input:focus{
+    outline: 0.15em solid #e88604;
+    box-shadow: 0 0 0.2em #e88604;
+    background-color: black;
+    color: white;
+}
+
+.emailmessage input:focus{
+    outline: 0.15em solid #e88604;
+    box-shadow: 0 0 0.2em #e88604;
+    background-color: black;
+    color: white;
+}
+
+.outmessage textarea:focus{
+    outline: 0.15em solid #e88604;
+    box-shadow: 0 0 0.2em #e88604;
+    background-color: black;
+    color: white;
+}
+
+.out input{
+    transform: scale(1);
+}
+
+.out input:hover{
+    transform: scale(1.2);
+}
+
+.out input:active{
+    color: #e88604;
+    border-color: #e88604;
+}
+
+.costmain{
+    
+    transform-style: inherit;
+    z-index: -1;
+}
+
+costmain::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.1);
+  z-index: -2;
+}
+
+.staticmain{
+    position: relative;
+    transform-style: inherit;
+}
+
+.reviews{
+    position: relative;
+    transform-style: inherit;
+}
+
+.staticmain {
+    box-shadow: 0 0 20px gray;
+    z-index: 1;
+}
+
+.reviews::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: block;
+    background-size: cover;
+    transform: translateZ(-.5px) scale(1.6);
+    z-index: -1;
+}
+
