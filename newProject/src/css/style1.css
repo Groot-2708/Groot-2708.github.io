@@ -1,0 +1,323 @@
+
+.aboutme input{
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.aboutme input:hover::before{
+    transform: scaleX(1.1);
+}
+.aboutme input:hover{
+    font-size: 17px;
+    color: #344051;
+    background-color: azure;
+    border-color: #344051;
+}
+
+.aboutme input:active{
+    transform: scale(1.1);
+    color: black;
+}
+
+.imgaboutme{
+    transition: all 0.1s;
+    transform: scale(1);
+    border-radius: 50%;
+}
+
+.imgaboutme:hover{
+    transform: scale(1.5);
+    border: 2px solid gray;
+        
+}
+
+.Web{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.Web:hover{
+    transform: scale(1.2);
+}
+
+.development{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.development:hover{
+    transform: scale(1.2);
+}
+
+.CEO{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.CEO:hover{
+    transform: scale(1.2);
+}
+
+.market{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.market:hover{
+    transform: scale(1.2);
+}
+
+.website a{
+    text-decoration: none;
+}
+
+.website a:active{
+    color: blue;
+}
+
+.cases input{
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.cases input:hover{
+    transform: scale(1.2);
+}
+
+.cases input:active{
+    border: 2px solid red;
+}
+
+.costmain input{
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.costmain input:hover{
+    transform: scale(1.2);
+}
+
+.costmain input:active{
+    border: 2px solid red;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    display: inline-block;
+}
+i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid #cfd2d7;
+    border-radius: 6px;
+    background: #cfd2d7;
+    position: relative;
+}
+
+input[type="radio"]+i{
+    border-radius: 50%;
+}
+i:before{
+    content: '';
+    position: absolute;
+    top: 0px; bottom: 0px;
+    left: 0px; right: 0px;
+    background: #c96500;
+    border-radius: 6px;
+    transform: scale(0);
+    transition: .4s;
+}
+
+input[type="radio"]+i:before{
+    border-radius: 6px;
+}
+
+input:checked+i:before{
+    transform: scale(1);
+}
+
+select:focus {
+  outline: 0.15em solid #00f;
+  box-shadow: 0 0 0.2em #00f;
+}
+
+.smile{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.smile:hover{
+    transform: scale(1.2);
+}
+
+.clock{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.clock:hover{
+    transform: scale(1.2);
+}
+
+.project{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.project:hover{
+    transform: scale(1.2);
+}
+
+.reward{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.reward:hover{
+    transform: scale(1.2);
+}
+
+.imgrewiews{
+    transition: all 0.1s;
+    transform: scale(1);
+    border-radius: 50%;
+}
+
+.imgrewiews:hover{
+    transform: scale(1.5);
+    border: 2px solid gray;
+        
+}
+
+.geo{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.geo:hover{
+    transform: scale(1.2);
+}
+
+.geo:hover::after{
+    content: "Геолокация";
+    font-size: 8px;
+    color: black;
+    background-color: white;
+    margin-left: 129px;
+    
+}
+.mail{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.mail:hover{
+    transform: scale(1.2);
+}
+
+.mail:hover::after{
+    content: "Почта";
+    font-size: 8px;
+    color: black;
+    background-color: white;
+    margin-left: 155px;
+    
+}
+.number{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.number:hover{
+    transform: scale(1.2);
+}
+
+.number:hover::after{
+    content: "Телефон";
+    font-size: 8px;
+    color: black;
+    background-color: white;
+    margin-left: 103px;
+    
+}
+
+.namemessage input:focus{
+    outline: 0.15em solid #e88604;
+    box-shadow: 0 0 0.2em #e88604;
+    background-color: black;
+    color: white;
+}
+
+.emailmessage input:focus{
+    outline: 0.15em solid #e88604;
+    box-shadow: 0 0 0.2em #e88604;
+    background-color: black;
+    color: white;
+}
+
+.outmessage textarea:focus{
+    outline: 0.15em solid #e88604;
+    box-shadow: 0 0 0.2em #e88604;
+    background-color: black;
+    color: white;
+}
+
+.out input{
+    transform: scale(1);
+    transition: all 0.4s;
+}
+
+.out input:hover{
+    transform: scale(1.2);
+}
+
+.out input:active{
+    color: #e88604;
+    border-color: #e88604;
+}
+
+.costmain{
+    
+    transform-style: inherit;
+    z-index: -1;
+}
+
+costmain::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: block;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.1);
+  z-index: -2;
+}
+
+.staticmain{
+    position: relative;
+    transform-style: inherit;
+}
+
+.reviews{
+    position: relative;
+    transform-style: inherit;
+}
+
+.staticmain {
+    box-shadow: 0 0 20px gray;
+    z-index: 1;
+}
+
+.reviews::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: block;
+    background-size: cover;
+    transform: translateZ(-.5px) scale(1.6);
+    z-index: -1;
+}
+
